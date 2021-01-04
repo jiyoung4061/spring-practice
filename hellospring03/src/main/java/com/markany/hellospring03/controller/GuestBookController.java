@@ -4,12 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/*
- * @author bit
+/**
+ * @author Jiyoung
  * 
- *  @RequestMapping 예제
- *  Method(Handler) 단독 맵핑
- *  Class 단독 맵핑
+ * @RequestMapping 예제
+ * Method(Handler) 단독 맵핑
+ * Class 단독 맵핑
  *  
  */
 

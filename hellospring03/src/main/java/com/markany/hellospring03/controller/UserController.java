@@ -8,22 +8,30 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.markany.hellospring03.vo.UserVo;
 
-/*
- * @author bit
+/**
+ * @author Jiyoung
  * 
- *  @RequestMapping 예제
- *  Class + Method(Handler) 맵핑
+ * @RequestMapping 예제
+ * Class + Method(Handler) 맵핑
  */
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
-
+	
+//	@ResponseBody
+//	@RequestMapping("/join")
+//	public String join() {
+//		return "userJoin";
+//	}
+	
+	// 요청방식이 GET일 경우
 	@RequestMapping(value = "/join", method = RequestMethod.GET)
 	public String join() {
 		return "/WEB-INF/views/join.jsp";
 	}
 
+	// 요청방식이 POST일 경우
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
 //	public String join(String name, String email, String password) {
 	public String join(UserVo vo) {
@@ -34,6 +42,7 @@ public class UserController {
 	@ResponseBody
 	@RequestMapping("/update")
 	public String update(@RequestParam(value = "n") String name) { // parameter의 이름과 프로그램에서 이름이 다를경우
+						//@RequestParam("name") String name // parameter이름과 프로그램에서 이름이 같은 경우
 		/*
 		 * n 파라미터 값이 전달되지 않으면 400 Bad Request 오류 발생
 		 */

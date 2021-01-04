@@ -5,11 +5,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/*
- * @author bit
- * 
- *  @RequestMapping 예제
- *  Method(Handler) 단독 맵핑
+/**
+ * @author Jiyoung
+ *  
+ * @RequestMapping 예제
+ * Method(Handler) 단독 맵핑
  * 
  */
 

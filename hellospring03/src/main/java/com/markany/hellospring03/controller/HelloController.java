@@ -1,8 +1,5 @@
 package com.markany.hellospring03.controller;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,11 +10,12 @@ import org.springframework.web.servlet.ModelAndView;
 public class HelloController {
 	
 	@RequestMapping("/hello")
+	// RequestMapping annotation : dispatcher가 backend controller로 넘겨주는 설정
 	public String hello() {
 		return "/WEB-INF/views/hello.jsp";
 	}
 	@RequestMapping("/hello2")
-	public String hello2(String name) {
+	public String hello2(String name) { // request.parameter 처리하기
 		System.out.println(name);
 		return "/WEB-INF/views/hello.jsp";
 	}
@@ -36,7 +34,7 @@ public class HelloController {
 		return "/WEB-INF/views/hello.jsp";
 	}
 	@RequestMapping("/hello5")
-	@ResponseBody
+	@ResponseBody // return 타입이 메세지라는 뜻/
 	public String hello5(String name) {
 		return "hello " +name;
 	}
