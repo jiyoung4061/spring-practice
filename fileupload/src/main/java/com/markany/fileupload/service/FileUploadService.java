@@ -22,7 +22,7 @@ public class FileUploadService {
 			System.out.println("--->" + fileSize);
 
 			byte[] fileData = multipartFile.getBytes();
-			
+			 
 			
 		} catch (IOException e) {
 			throw new RuntimeException("file upload error:"+ e);
