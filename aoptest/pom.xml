@@ -1,17 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.markany</groupId>
-    <artifactId>spring-practice</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <artifactId>aoptest</artifactId>
-  
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.markany</groupId>
+		<artifactId>spring-practice</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>aoptest</artifactId>
+
+	<properties>
 		<org.springframework-version>4.3.8.RELEASE</org.springframework-version>
 	</properties>
-	
-	
+
+
 	<dependencies>
 		<!-- Spring Core, Context, AOP -->
 		<dependency>
@@ -19,7 +21,15 @@
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		</dependencies>
+		
+		<!-- Spring Aspect -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<finalName>aoptest</finalName>
@@ -41,5 +51,5 @@
 			</plugin>
 		</plugins>
 	</build>
-  
+
 </project>

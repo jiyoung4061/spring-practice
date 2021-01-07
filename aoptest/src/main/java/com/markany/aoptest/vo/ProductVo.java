@@ -1,4 +1,4 @@
-package com.markany.aoptest.main;
+package com.markany.aoptest.vo;
 
 public class ProductVo {
 

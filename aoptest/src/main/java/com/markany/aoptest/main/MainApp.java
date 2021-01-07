@@ -5,6 +5,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.markany.aoptest.service.ProductService;
+import com.markany.aoptest.vo.ProductVo;
 
 public class MainApp {
 
