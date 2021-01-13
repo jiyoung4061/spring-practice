@@ -34,6 +34,8 @@ public class ExampleController {
 		 */
 		LOG.debug( "#ex1 - debug log" );
 		LOG.info( "#ex1 - info log" );
+		
+		// logback.xml에 글로벌 로거에 level이 warn이기 때문에 위에 두줄은 안나오고 warn-level이후부터 로그 찍힘
 		LOG.warn( "#ex1 - warn log" );
 		LOG.error( "#ex1 - error log" );
 		

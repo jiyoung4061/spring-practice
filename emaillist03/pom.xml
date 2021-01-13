@@ -14,43 +14,48 @@
 		<org.springframework-version>4.3.8.RELEASE</org.springframework-version>
 	</properties>
 	<dependencies>
+	
 		<!-- Spring Core, Context, AOP -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-		<!-- Spring Web -->
+		
+		<!-- Spring Web: web만드는데 도와주는 애들(Listener, Filter, Dispatcher등) -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
 
-		<!-- Spring MVC => ActionFactory에서 Action과 같은 역할 -->
+		<!-- Spring MVC => ActionFactory에서 Action과 같은 역할로 HandlerMapping, ViewreSolver, messageConverter등 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
 		<!-- mariadb jdbc driver -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 			<version>2.4.4</version>
 		</dependency>
+		
 		<!-- jstl -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		
 		<!-- servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
-			<scope>provided</scope>
+			<scope>provided</scope> <!-- jenkins에서 compile시 필요함! -->
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>

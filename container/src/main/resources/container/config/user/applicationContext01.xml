@@ -12,16 +12,9 @@
         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
 
-	<!-- auto proxy : 자동으로 scanning해서 proxy 만들기 -->
-	<aop:aspectj-autoproxy />
-
 	<context:annotation-config />
 
-	<context:component-scan base-package="com.markany.aoptest.service, com.markany.aoptest.aspect">
-		<context:include-filter type="annotation"
-			expression="org.springframework.stereotype.Repository" />
-		<context:include-filter type="annotation"
-			expression="org.springframework.stereotype.Service" />
+	<context:component-scan base-package="container.">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Component" />
 	</context:component-scan>

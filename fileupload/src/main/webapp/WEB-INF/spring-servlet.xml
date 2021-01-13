@@ -14,6 +14,8 @@
 	<!-- validator, conversionService, messageConverter를 자동으로 등록 -->
 	<mvc:annotation-driven />
 
+	<!-- resource mapping -->
+	<mvc:resources location="file:/mysite-uploads" mapping="/images/**"/>
  
 	<context:annotation-config />
 	<context:component-scan base-package="com.markany.fileupload.controller" />
@@ -38,6 +40,7 @@
 		<!-- defaultEncoding -->
 		<property name="defaultEncoding" value="utf-8" />
 	</bean>	
+	
 	
 
 </beans>

@@ -9,6 +9,8 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
+// advice + joinpoint + pointcut 을 합친 class
+
 @Aspect
 @Component
 public class MyAspect {	
@@ -40,6 +42,7 @@ public class MyAspect {
 
 	@Around("execution(* *..*.*.ProductService.*(..))") 
 	public Object aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {
+		// ProceedJoinPoint : 해당 method가 실행하는 시점을 알려준다..?
 		// before advice
 		System.out.println("--- @Around(Before) Advice ---");
 		
