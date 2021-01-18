@@ -11,6 +11,7 @@
  |        |					|---- user
  |        |					|---- soundsystem
  |        |					|---- videosystem
+ | 		  |								|---- mixing
  |        |---- [ resources ]
  |        	        |---- container
  |        			|---- config
@@ -23,6 +24,7 @@
           |			|---- user
           |			|---- soundsystem
           |			|---- videosystem
+          |						|---- mixing
           |---- [ resources ]
 
 main
@@ -31,6 +33,7 @@ main
 		container.videosystem
 		container.config.soundsystem
 		container.config.videosystem
+		container.config.videosystem.mixing
 	resources
 		container.config.soundsystem
 		container.config.videosystem
@@ -38,3 +41,4 @@ test
 	java
 		container.soundsystem
 		container.videosystem
+		container.videosystem.mixing
