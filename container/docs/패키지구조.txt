@@ -1,0 +1,40 @@
+
+
+[ src ]
+ |---- [ main ]
+ |        |---- [ java ]
+ |        |	        |---- container => 주로 bean 위치함
+ |        |			|---- user
+ |        |			|---- soundsystem
+ |        |			|---- videosystem
+ |        |			|---- config
+ |        |					|---- user
+ |        |					|---- soundsystem
+ |        |					|---- videosystem
+ |        |---- [ resources ]
+ |        	        |---- container
+ |        			|---- config
+ |        					|---- user
+ |        					|---- soundsystem
+ |        					|---- videosystem
+ |---- [ test ]
+          |---- [ java ]
+          |	        |---- container
+          |			|---- user
+          |			|---- soundsystem
+          |			|---- videosystem
+          |---- [ resources ]
+
+main
+	java
+		container.soundsystem
+		container.videosystem
+		container.config.soundsystem
+		container.config.videosystem
+	resources
+		container.config.soundsystem
+		container.config.videosystem
+test
+	java
+		container.soundsystem
+		container.videosystem

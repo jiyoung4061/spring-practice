@@ -1,11 +1,10 @@
 package container.config.user;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import container.user.User;
 
-@Configuration
+//@Configuration : 안해줘도 됨!! (package 지정해주어서!)
 public class AppConfig01 {
 	
 	@Bean

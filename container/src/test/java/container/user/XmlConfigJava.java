@@ -26,6 +26,6 @@ public class XmlConfigJava {
 	@Ignore
 	@Test
 	public void testGetName() {
-		assertEquals(user.getName(), "둘리"); 
+//		assertEquals(user.getName(), "둘리"); 
 	}
 }
