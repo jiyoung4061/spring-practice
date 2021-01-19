@@ -1,4 +1,4 @@
-package com.markany.hellospring03.vo;
+package com.markany.hellospring.vo;
 
 public class UserVo {
 	private Long no;

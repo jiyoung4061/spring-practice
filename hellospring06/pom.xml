@@ -9,7 +9,7 @@
 	</parent>
 	<artifactId>hellospring06</artifactId>
 
-	<dependencyManagement> <!-- 부모자리에 spring boot 설정을 못해줘서 대신 함! -->
+	<dependencyManagement> <!-- 부모자리에 spring boot 설정을 못해줘서 대신 함!(단독 프로젝트의 경우는 가능) -->
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.boot</groupId>

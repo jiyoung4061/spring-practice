@@ -1,4 +1,4 @@
-package com.markany.hellospring03.controller;
+package com.markany.hellospring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.markany.hellospring03.vo.UserVo;
+import com.markany.hellospring.vo.UserVo;
 
 /**
  * @author Jiyoung
